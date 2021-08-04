@@ -41,7 +41,7 @@ function setupMap(center) {
         type: "Feature",
         properties: {
           message: "梅花（Prunus mume）",
-          iconSize: [70, 70],
+          iconSize: [100, 100],
         },
         geometry: {
           type: "Point",
@@ -52,7 +52,7 @@ function setupMap(center) {
         type: "Feature",
         properties: {
           message: "菊花(chrysanthemum)",
-          iconSize: [70, 70],
+          iconSize: [100, 100],
         },
         geometry: {
           type: "Point",
@@ -63,7 +63,7 @@ function setupMap(center) {
         type: "Feature",
         properties: {
           message: "木槿花(hibiscus)",
-          iconSize: [70, 70],
+          iconSize: [100, 100],
         },
         geometry: {
           type: "Point",
@@ -74,16 +74,33 @@ function setupMap(center) {
         type: "Feature",
         properties: {
           message: "茉莉花(jasmine)",
-          iconSize: [80, 80],
+          iconSize: [120, 120],
         },
         geometry: {
           type: "Point",
           coordinates: [120, 15],
         },
       },
+      {
+        type: "Feature",
+        properties: {
+          message: "金鍊花(golden shower tree)",
+          iconSize: [120, 120],
+        },
+        geometry: {
+          type: "Point",
+          coordinates: [100, 13],
+        },
+      },
     ],
   };
-  const imageArray = ["plum_blossom", "chrysanthemum", "hibiscus", "jasmine"];
+  const imageArray = [
+    "plum_blossom",
+    "chrysanthemum",
+    "hibiscus",
+    "jasmine",
+    "golden shower tree",
+  ];
 
   var i = 0;
   geojson.features.forEach(function (marker) {
